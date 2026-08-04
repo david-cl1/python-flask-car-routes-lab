@@ -11,7 +11,7 @@ def home ():
 @app.route ('/models/<model>')
 def models(model):
     if model in existing_models:
-        return f"Flatiron {model} is in our fleet"
+        return f"Flatiron {model} is in our fleet!"
     return f"No models called {model} exists in our catalog", 404
 
 if __name__ == '__main__':
